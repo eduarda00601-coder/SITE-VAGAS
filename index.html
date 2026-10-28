@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConectaCarreiras | Vagas de Emprego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>💼 ConectaCarreiras</h2>
+    <p>Seu próximo emprego começa aqui!</p>
+  </header>
+
+  <main>
+    <section class="apresentacao">
+      <h1>Encontre sua próxima oportunidade</h1>
+      <p>
+        Cadastre seus dados e demonstre seu interesse
+        nas vagas disponíveis.
+      </p>
+    </section>
+
+    <form id="formulario">
+      <h2>Cadastro de Candidato</h2>
+
+      <label for="nome">Nome completo</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome completo"
+        required
+      >
+
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="seuemail@exemplo.com"
+        required
+      >
+
+      <label for="telefone">Telefone</label>
+      <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        placeholder="(00) 00000-0000"
+        required
+      >
+
+      <label for="vaga">Vaga desejada</label>
+      <select id="vaga" name="vaga" required>
+        <option value="">Selecione uma vaga</option>
+        <option value="Auxiliar administrativo">
+          Auxiliar administrativo
+        </option>
+        <option value="Atendente">Atendente</option>
+        <option value="Jovem aprendiz">Jovem aprendiz</option>
+        <option value="Vendedor">Vendedor</option>
+        <option value="Recepcionista">Recepcionista</option>
+        <option value="Estágio">Estágio</option>
+      </select>
+
+      <label for="escolaridade">Escolaridade</label>
+      <select id="escolaridade" name="escolaridade" required>
+        <option value="">Selecione sua escolaridade</option>
+        <option value="Ensino fundamental">
+          Ensino fundamental
+        </option>
+        <option value="Ensino médio cursando">
+          Ensino médio cursando
+        </option>
+        <option value="Ensino médio completo">
+          Ensino médio completo
+        </option>
+        <option value="Ensino superior cursando">
+          Ensino superior cursando
+        </option>
+        <option value="Ensino superior completo">
+          Ensino superior completo
+        </option>
+      </select>
+
+      <label for="experiencia">Experiência profissional</label>
+      <textarea
+        id="experiencia"
+        name="experiencia"
+        placeholder="Conte resumidamente sua experiência ou escreva 'Primeiro emprego'"
+        rows="4"
+        required
+      ></textarea>
+
+      <button type="submit" id="botao">Enviar candidatura</button>
+
+      <p id="aviso" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 ConectaCarreiras | Oportunidades para o seu futuro.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
